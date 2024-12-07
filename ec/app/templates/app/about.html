@@ -1,0 +1,62 @@
+{% extends "app/base.html" %}
+{% load static%}
+{% block title %}About{% endblock title  %}
+
+
+{% block banner-slider  %} 
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{%  static 'app/images/banner/b1.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item active">
+      <img src="{%  static 'app/images/banner/b2.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item active">
+      <img src="{%  static 'app/images/banner/b3.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item active">
+      <img src="{%  static 'app/images/banner/b4.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+  </div>
+
+</div>
+
+{% endblock banner-slider   %}
+ {% block main-content %}
+<div class="container mt-3">
+<br>
+<h2 class="text-center">About Us</h2>
+<br>
+<div class="row container">
+<p class="fs-4 text-center">
+Company Overview: Founded in 2010, leading provider of high-quality dairy products.
+Vision: To be the most trusted name in dairy, focusing on quality and innovation.
+Core Values: Integrity, excellence, and customer satisfaction.
+Team: Experienced professionals dedicated to delivering top products.
+Sustainability: Committed to eco-friendly practices and reducing environmental impact.
+Community: Actively involved in local initiatives and charitable efforts.
+Customer Feedback: Positive testimonials from satisfied customers.
+Awards: Recipient of the ‘Best Dairy Product’ award in 2023.
+Future Goals: Expanding product lines and exploring new markets.
+Contact: Reach us at info@company.com or (123) 456-7890.
+
+</p>
+</div>
+
+<br><br>
+<h2 class="text-center">Mission</h2>
+<br>
+<div class="row container">
+<p class="fs-4 text-center">
+
+
+ Our mission is to deliver outstanding value to our customers through innovative solutions, high-quality products, and unparalleled service.
+ This paragraph provides a comprehensive view of your company's mission, encompassing customer satisfaction, innovation, quality, sustainability, community engagement, ethical practices, and employee empowerment.
+</p>
+</div>
+</div>
+<br><br>
+
+ {% endblock main-content %}
